@@ -68,7 +68,7 @@ bazi_calculator_agent = Agent(
     name="bazi_calculator_agent",
     model="gemini-2.5-flash",
     tools=[gregorian_datetime_to_bazi],
-    instruction=RAG_AGENT_PROMPT,
+    instruction=BAZI_CALCULATOR_AGENT_PROMPT,
     description="An search agent, search for Bazi knowledge in a Vertex AI Search datastore"
 )
 bazi_calculator_agent = AgentTool(bazi_calculator_agent)
