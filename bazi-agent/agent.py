@@ -13,6 +13,7 @@ PROJECT_ID = os.getenv("GOOGLE_CLOUD_PROJECT")
 LOCATION = os.getenv("GOOGLE_CLOUD_LOCATION")
 DATASTORE_ID = os.getenv("GOOGLE_DATASTORE_ID")
 DATASTORE_PATH = f"projects/{PROJECT_ID}/locations/{LOCATION}/collections/default_collection/dataStores/{DATASTORE_ID}"
+LANGUAGE = os.getenv("LANGUAGE")
 PROMPT = f"""
 **Context**
 - You are a wise and venerable Bazi (八字) (eight characters/four pillars) master, with a deep understanding of cosmic flows and human destiny.
@@ -35,7 +36,7 @@ PROMPT = f"""
 
 **Format**:
 - Respond clearly, use bullet or numbered lists.
-- Respond in Vietnamese.
+- Respond in {LANGUAGE} language.
 """
 RAG_AGENT_PROMPT = f"""
 You are a specialized Bazi analysis assistant. Your task is to provide detailed interpretations of a Bazi chart's components based on a private knowledge base.

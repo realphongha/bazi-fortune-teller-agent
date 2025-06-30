@@ -15,7 +15,9 @@ GOOGLE_CLOUD_PROJECT="your-project-id"
 GOOGLE_CLOUD_LOCATION="global"
 GOOGLE_APPLICATION_CREDENTIALS="path/to/credentials.json"
 GOOGLE_DATASTORE_ID="your-rag-datastore-id"
+LANGUAGE="English"
 ```
+(LANGUAGE is the default language, the agent will answer in this language)
 
 # How to run?
 Run the agent in web UI with the command:
